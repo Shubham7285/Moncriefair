@@ -179,14 +179,14 @@ if (empty($category_name) || in_array("all", $category_name)) {
             </div>
             <div class="modal-body p-lg-4 p-2 w-100 my-auto mx-auto coupons">
                 <div class="border-dashed-7 pt-lg-4 pb-lg-4 py-4 footer_form_A ui_kit_footer_form elementor-popupform">
-                    <h3 class="px-lg-0 px-4"><?php echo $args["page_templates"]["promotions"]["popup_form_heading"]; ?></h3>
+                    <h3 class="px-lg-0 px-4"><?php echo $get_rds_template_data_array["globals"]["promotion"]["popup_form_heading"]; ?></h3>
                     <div class="my-md-0 mt-lg-4 mt-3 w-lg-260 mx-auto text-start text-lg-center d-flex align-items-center justify-content-center pb-4 px-lg-0 px-4">
                         <i class="icon-shield-check1 text_30 line_height_30 me-2 position-relative color_primary"></i>
-                        <span class="font_alt_1 text_bold text_16 line_height_25 sm_text_16  sm_line_height_30 color_primary"><?php echo $args["page_templates"]["promotions"]["popup_form_subheading"]; ?></span>
+                        <span class="font_alt_1 text_bold text_16 line_height_25 sm_text_16  sm_line_height_30 color_primary"><?php echo $get_rds_template_data_array["globals"]["promotion"]["popup_form_subheading"]; ?></span>
                     </div>
                     <div class="px-lg-5 mx-lg-4 px-4">
                         <?php
-                        $form_id = $args["page_templates"]["promotions"]["popup_gravity_form_id"];
+                        $form_id = $get_rds_template_data_array["globals"]["promotion"]["popup_gravity_form_id"];
                         echo do_shortcode("[gravityforms id=" . $form_id . " ajax=true]");
                         ?>
                     </div>
